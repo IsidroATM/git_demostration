@@ -96,3 +96,36 @@ footer {
   text-align: center;
   padding: 15px 0;
 }
+
+/* Título de slogan en header */
+.slogan {
+  font-size: 1.1em;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Grupo de botones */
+.btn-group {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header h1, header h2 {
+    font-size: 1.4em;
+  }
+}
+
